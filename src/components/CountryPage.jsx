@@ -84,7 +84,6 @@ export default function CountryPage() {
                                 <div className='flex items-center text-sm gap-x-3'>
                                     <h3 className='font-semibold'>Currencies:</h3>
                                     <p className='font-light flex items-center gap-x-3'>
-                                        <span>{countryDetails.currencies[currenciesCode[0]]?.symbol}</span>
                                         {countryDetails.currencies[currenciesCode[0]]?.name}
                                     </p>
                                 </div>
