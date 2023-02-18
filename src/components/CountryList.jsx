@@ -15,7 +15,7 @@ export default function CountryList() {
             <div className='container p-3 grid grid-cols-1 xs:p-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20'>
                 {countryList.map((country) => (
                     <div key={country.name.common} className='bg-lightElement dark:bg-darkElement rounded-md p-1 shadow-md'>
-                        <Link to={`/countries/${country.name.offical}`}>
+                        <Link to={`/countries/${country.name.official}`}>
                             <img src={country.flags.png} className="w-full h-40" alt="island" />
                             <div className='p-8 flex flex-col gap-y-4'>
                                 <h2 className='text-lg font-bold'>{country.name.common}</h2>
