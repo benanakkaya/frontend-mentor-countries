@@ -103,7 +103,7 @@ export default function CountryPage() {
                                 <h3 >Border Countries:</h3>
                                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center gap-3'>
                                     {borders.map((country) => (
-                                        <Link className='px-3 py-2 rounded-md text-xs bg-lightElement dark:bg-darkElement' to={`/countries/${country.name?.common}`}>
+                                        <Link className='px-3 py-2 rounded-md text-xs bg-lightElement dark:bg-darkElement' to={`/countries/${country.name?.offical}`}>
                                             {country.name?.common}
                                         </Link>
                                     ))}
