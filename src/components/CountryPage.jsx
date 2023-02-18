@@ -18,7 +18,7 @@ export default function CountryPage() {
     const { countryName } = useParams();
 
     const fetchCountryDetails = async () => {
-        const res = await axios.get(`https://restcountries.com/v3.1/name/${countryName}`);
+        const res = await axios.get(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`);
         const all = await axios.get(`https://restcountries.com/v3.1/all`);
         setCountryDetails(res.data[0])
         setNativeCode(Object.keys(res.data[0].name.nativeName));
