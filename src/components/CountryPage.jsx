@@ -52,7 +52,7 @@ export default function CountryPage() {
                     </div>
                     <div className='flex flex-col gap-y-12 p-6'>
                         <h1 className='text-4xl font-bold'>{countryDetails.name?.common}</h1>
-                        <div className='flex flex-col sm:flex-row gap-x-16'>
+                        <div className='flex flex-col sm:flex-row gap-x-16 gap-y-3'>
                             <div className='flex flex-col gap-y-3'>
                                 <div className='flex items-center text-sm gap-x-3'>
                                     <h3 className='font-semibold'>Native Name:</h3>
